@@ -1,10 +1,11 @@
 {
   "workouts": [
     {
-      "name": "Camden",
-      "description": "This is a sample review",
-      "reps" : "",
-      "sets" : "",
+      "name": "Push-ups",
+      "description": "Chest, Shoulders, Triceps",
+      "sets": "3",
+      "reps": "11",
+      "equipments": "None",
       "id": 1
     }
   ]

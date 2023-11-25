@@ -125,24 +125,24 @@ const Intermediate = () => {
   ]);
 
   return (
-    <div class="flex overflow-x-auto whitespace-no-wrap p-3 scrollbar-thin scrollbar-thumb-gray-[rgba(0,0,0,0)] scrollbar-track-gray-[rgba(0,0,0,0)]">
+    <div class="flex overflow-x-auto whitespace-no-wrap p-3 scrollbar-thin scrollbar-thumb-teal-500 scrollbar-track-transparent">
         {intermediate.map((exercise) => (
-            <div class="flex-shrink-0 w-64 mx-2 bg-slate-200 p-3 rounded-lg">
-                <div className="inline-flex gap-3 items-center">
-                    <div className="bg-teal-500 px-1 font-poppins text-sm text-slate-200 rounded-full">I</div>
-                    <div>
-                        <h2 className='text-slate-800 font-poppins font-bold text-sm'>{exercise.name}</h2>
-                        <h2 className='text-slate-800 font-poppins font-medium text-xs'>{exercise.description}</h2>
-                    </div>
+            <div class="flex-shrink-0 w-64 mx-2 bg-slate-50/10 p-3 rounded-lg">
+            <div className="inline-flex gap-3 items-center">
+                <div className="bg-teal-500 px-1 font-poppins text-sm text-slate-950 rounded-full">I</div>
+                <div>
+                    <h2 className='text-slate-50 font-poppins font-bold text-sm'>{exercise.name}</h2>
+                    <h2 className='text-slate-50 font-poppins font-medium text-xs'>{exercise.description}</h2>
                 </div>
-               <div>
-                <h2 className='text-slate-800 font-poppins font-semibold text-xs ml-7 mt-3'>Equipment: {exercise.equipment}</h2>
-                <div className='flex items-center justify-evenly mt-4 pt-2 border-t border-slate-900/20'>
-                    <h2 className='text-slate-800 font-poppins font-semibold text-xs'>Sets: {exercise.sets}</h2>
-                    <h2 className='text-slate-800 font-poppins font-semibold text-xs'>Reps: {exercise.reps}</h2>
-                </div>
-               </div>
             </div>
+           <div>
+            <h2 className='text-slate-50 font-poppins font-semibold text-xs ml-7 mt-3'>Equipment: {exercise.equipment}</h2>
+            <div className='flex items-center justify-evenly mt-4 pt-2 border-t border-slate-50/20'>
+                <h2 className='text-slate-50 font-poppins font-semibold text-xs'>Sets: {exercise.sets}</h2>
+                <h2 className='text-slate-50 font-poppins font-semibold text-xs'>Reps: {exercise.reps}</h2>
+            </div>
+           </div>
+        </div>
         ))}
     </div>
   );
