@@ -1,0 +1,11 @@
+{
+  "workouts": [
+    {
+      "name": "Camden",
+      "description": "This is a sample review",
+      "reps" : "",
+      "sets" : "",
+      "id": 1
+    }
+  ]
+}
