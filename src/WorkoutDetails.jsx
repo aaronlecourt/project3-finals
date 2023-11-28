@@ -3,12 +3,12 @@ import { useParams, useNavigate } from 'react-router-dom';
 
 const WorkoutDetails = () => {
     const { id } = useParams();
-    const { data: workouts, error, isPending } = useFetch('http://localhost:8000/workouts/' + id);
+    const { data: workouts, error, isPending } = useFetch('http://localhost:8002/workouts/' + id);
 
     const navigate = useNavigate();
 
     const handleClick = () => {
-        fetch('http://localhost:8000/workouts/' + workouts.id, {
+        fetch('http://localhost:8002/workouts/' + workouts.id, {
             method: "DELETE",
         }).then(() => {
             navigate('/')

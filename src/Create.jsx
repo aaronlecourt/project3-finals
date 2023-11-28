@@ -18,7 +18,7 @@ const Create = () => {
         e.preventDefault();
         const workouts = {name, description, sets, reps, equipments}
         setIsPending(true);
-        fetch('http://localhost:8000/workouts',{
+        fetch('http://localhost:8002/workouts',{
             method: "POST",
             headers: {"Content-type": "application/json"},
             body: JSON.stringify(workouts)

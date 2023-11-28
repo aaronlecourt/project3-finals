@@ -1,11 +1,11 @@
 {
   "workouts": [
     {
-      "name": "Push-ups",
-      "description": "Chest, Shoulders, Triceps",
-      "sets": "3",
-      "reps": "11",
-      "equipments": "None",
+      "name": "Barbell Squats",
+      "description": "Quads, etc",
+      "sets": "4",
+      "reps": "9",
+      "equipments": "Barbell",
       "id": 1
     }
   ]

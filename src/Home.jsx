@@ -7,7 +7,7 @@ import WorkoutList from './WorkoutList';
 
 
 const Home = () => {
-    const {data:workouts, isPending, error} = useFetch('http://localhost:8000/workouts');
+    const {data:workouts, isPending, error} = useFetch('http://localhost:8002/workouts');
   return (
     <div className="grid grid-cols-3">
       <div className="col-span-1 ml-5 px-3 ">
